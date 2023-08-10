@@ -7,5 +7,7 @@ SELECT
 FROM
   notes
 WHERE
-  active=1;
+  active=1
+ORDER BY
+  created_at DESC;
 
