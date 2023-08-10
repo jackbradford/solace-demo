@@ -1,9 +1,11 @@
 import express, { Request, Response } from 'express';
 import 'dotenv/config';
+import middlewares from './middlewares';
 import { routes } from './routes';
 
 const app = express();
 const port = 3003;
+app.use(middlewares);
 
 app.get('/', (req: Request, res: Response) => {
   res.send("Done."); // FIXME: deliver FE.
