@@ -26,3 +26,8 @@ To uninstall the database and the database-user:
 ./schema/uninstall.sh
 ```
 
+### Development Instructions
+To setup your environment for development:
+1. Clone the UI repository and the common repository.
+2. In the UI repo, edit this file: `src/lib/datasource/config.ts` and change the API_URL constant to point to the backend's development server.
+
