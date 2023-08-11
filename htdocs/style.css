@@ -30,6 +30,8 @@ body {
   line-height: 1;
   height: 100dvh;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 main {
@@ -39,6 +41,12 @@ main {
 
 ol, ul {
   list-style: none;
+}
+
+#app-container {
+  position: relative;
+  max-width: 500px;
+  flex-grow: 1;
 }
 
 h1, h2,
